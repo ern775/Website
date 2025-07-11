@@ -1,5 +1,5 @@
 {
-  description = "A Nix-flake-based C/C++ development environment";
+  description = "Nodejs Environment";
 
   inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
 
