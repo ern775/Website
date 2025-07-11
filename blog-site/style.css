@@ -1,0 +1,266 @@
+a,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+p,
+span,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 350;
+    font-weight: var(--text-wght)
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.class {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+:root {
+    --textCol: #dddddd;
+    --lightTextCol: #73676f;
+    --mainCol: #d05387;
+    --accent1: #e6c8d1;
+    --accent2: #a148c3;
+    --accent3: #27162d
+}
+
+body {
+    color: #1d1a1a;
+    color: var(--textCol);
+    background: #101010;
+    word-wrap: break-word
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #d05387;
+    color: var(--mainCol)
+}
+
+p,
+p.desc,
+ul {
+    margin: 0 0 2rem;
+    font-size: 1.25rem;
+    max-width: 76ch
+}
+
+.pagination span {
+    font-size: 1.45rem
+}
+
+ol,
+ul {
+    margin: 3em
+}
+
+small {
+    font-size: 1rem
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.1
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0 0 .5em;
+    max-width: 33ch;
+    padding-top: 30px;
+}
+
+h2,
+h2 a,
+h2 a:active,
+h2 a:visited {
+    --text-wght: 1000;
+    color: #d05387;
+    color: var(--mainCol);
+    text-decoration: none
+}
+
+@media screen and (min-width:60em) {
+    h2 {
+        font-size: 4rem
+    }
+
+    p,
+    p.desc,
+    ul {
+        max-width: 66ch
+    }
+}
+
+@media screen and (min-width:95em) {
+    p.desc {
+        font-size: 1.95rem
+    }
+}
+
+@media screen and (min-width:130em) {
+    h2 {
+        font-size: 5rem
+    }
+}
+
+h4 {
+    margin: .5em 0 .25em;
+    font-size: 1.75rem;
+    color: #d05387;
+    color: var(--mainCol)
+}
+
+h4,
+h4 a {
+    --text-wght: 700
+}
+
+h4 a {
+    background: none;
+    text-decoration: none
+}
+
+h4 a:hover {
+    color: #a148c3;
+    color: var(--accent2)
+}
+
+h5 {
+    font-size: 1rem;
+    margin: .25em 0;
+    color: #73676f;
+    color: var(--lightTextCol)
+}
+
+@media screen and (min-width:60em) {
+    @supports (display:grid) {
+        body.pager .content {
+            display: grid;
+            grid-template-columns: 3fr 1.5fr;
+            grid-gap: 4rem;
+            gap: 4rem
+        }
+
+        .cats-list {
+            margin-top: 5em
+        }
+
+        body.pager .listing {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 2rem;
+            grid-row-gap: 3rem
+        }
+    }
+}
+
+body.pager .pagination {
+    width: 90%;
+    margin: 3rem auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.cats-list {
+    list-style: none
+}
+
+.cats-list a,
+.cats-list a:link,
+.cats-list a:visited {
+    text-decoration: none;
+    background: none;
+    color: #d05387;
+    color: var(--mainCol)
+}
+
+.cats-list a:hover {
+    color: #a148c3;
+    color: var(--accent2)
+}
+
+.cat-item {
+    margin-bottom: 5px;
+}
+
+.post-listing {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid hsla(0, 0%, 43.5%, .2)
+}
+
+.pagination a {
+    color: #d05387;
+    color: var(--mainCol);
+}
+
+.pagination a:hover {
+    background-size: 100% 1.25em;
+    color: #fff
+}
+
+.content-main {
+    width: 90%;
+    margin: 0 auto 5rem
+}
+
+@media screen and (min-width:60em) {
+    .content-main {
+        width: 85%
+    }
+}
+
+@media screen and (min-width:95em) {
+    .content-main {
+        width: 75%
+    }
+}
+
+@media screen and (min-width:130em) {
+    .content-main {
+        width: 65%
+    }
+}
+
+@media screen and (min-width:180em) {
+    .content-main {
+        width: 55%
+    }
+}
